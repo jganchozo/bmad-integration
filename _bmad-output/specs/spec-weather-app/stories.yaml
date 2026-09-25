@@ -1,0 +1,19 @@
+- id: "1"
+  title: Search and choose a city
+  description: >-
+    Implement CAP-1 in SPEC.md: let users search for cities and choose from
+    matches labeled with region and country. Show a clear message when no
+    locations match.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "2"
+  title: Show current weather for the selected city
+  description: >-
+    Implement CAP-2 in SPEC.md: show current temperature in °C, a readable
+    condition, and wind speed in km/h for the selected city. Show a clear
+    message without unverified values when weather data is unavailable.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
