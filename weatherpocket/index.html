@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eaf4fb">
+    <title>WeatherPocket — Choose a city</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script type="module" src="/src/main.mjs"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">WeatherPocket</p>
+        <h1>Choose your city</h1>
+        <p>Search for a place, then choose the right match by region and country. For an ambiguous city, add its region or country to your search.</p>
+      </header>
+
+      <form id="city-search" role="search">
+        <label for="city-name">City name</label>
+        <div class="search-controls">
+          <input id="city-name" name="city" type="search" autocomplete="off" placeholder="For example, Springfield">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+
+      <p id="search-status" class="status" role="status" aria-live="polite">Enter at least two characters to search.</p>
+
+      <section id="results-section" class="results-section" aria-labelledby="results-heading" hidden>
+        <h2 id="results-heading">Matching places</h2>
+        <ul id="results" class="results"></ul>
+      </section>
+
+      <section id="selected-section" class="selected-section" aria-labelledby="selected-heading" hidden>
+        <h2 id="selected-heading">Selected place</h2>
+        <p id="selected-place"></p>
+      </section>
+
+      <footer>Location search data: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a></footer>
+    </main>
+  </body>
+</html>
